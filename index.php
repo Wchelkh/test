@@ -32,7 +32,16 @@ while ($donnees = $req->fetch())
         <?php echo htmlspecialchars($donnees['titre']); ?>
         <em>le <?php echo $donnees['date_creation_fr']; ?></em>
     </h3>
-    
+    <?php
+$note=12;
+if($note<=10){
+	echo"du bist dumm";
+	
+}
+else{
+	echo" du hast bestanden";
+}
+?>
     <p>
     <?php
     // On affiche le contenu du billet
